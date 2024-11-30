@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página Inicial</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Boas Vindas</h1>
+        <p>Vamos personalizar sua saudação usando Javascript</p>
+        <div class="saudacao" id="mensagemSaudacao">Olá, visitante</div>
+        <button onclick="mudarNome()">Personalizar Saudação</button>
+    </div>
+
+    <script>
+        // document lê o html procurando o elemento, o getElementbyid pega o id selecionado,
+        // com isso inserimos um texto
+
+        // variaveis
+        // declaração de variavel, o nome da viariavel é nome e ela tem o valor de José
+        // ao clicar o javascript identifica esse click que foi declarada na tag button 
+        //e faz uma ação ou função(bloco de código)
+
+
+        function mudarNome(){
+            let nome = "José"
+        document.getElementById("mensagemSaudacao").textContent = "Olá " + nome
+        }
+    </script>
+    
+</body>
+</html>
